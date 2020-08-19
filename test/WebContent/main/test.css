@@ -1,0 +1,33 @@
+@charset "UTF-8";
+
+div.check{
+	color:red;
+	font-size:5pt;
+	font-weight: bold;
+}
+div.check2{
+	color:red;
+	font-size:5pt;
+	font-weight: bold;
+}
+article{
+	position:absolute;
+	align:center;
+	width:200px;
+	height:200px;
+}
+body{
+	background-image:url(https://ae01.alicdn.com/kf/HTB1tj.hcwMPMeJjy1Xcq6xpppXaZ/-.jpg_640x640.jpg);
+}
+h1{
+	color:#ff2bfe;
+}
+table{
+	background-color:white;
+}
+section{
+	position:absolute;
+	left:200px;
+	width:600px;
+	height: 600px;
+}

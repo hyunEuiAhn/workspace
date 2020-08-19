@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xmlns:jdbc="http://www.springframework.org/schema/jdbc"
+	xmlns:tx="http://www.springframework.org/schema/tx"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd
+		http://www.springframework.org/schema/jdbc http://www.springframework.org/schema/jdbc/spring-jdbc-4.3.xsd
+		http://www.springframework.org/schema/tx http://www.springframework.org/schema/tx/spring-tx-4.3.xsd">
+	
+	<!-- connection pool & DataSource -->
+	<bean id="dataSource" class="org.apache.commons.dbcp2.BasicDataSource">
+		<property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@localhost:1521:xe" />
+		<property name="username" value="java" />
+		<property name="password" value="itbank" />
+		<property name="maxTotal" value="20" />
+		<property name="maxIdle" value="3" />
+		
+		</bean>
+	<!--  -->
+
+	<!-- main -->
+	<bean id="helloSpring" class="user.main.HelloSpring"></bean>
+	<!-- insert -->
+	<bean id="userInsertAction" class="user.action.UserInsertAction">
+		<property name="userDTO" ref="userDTO"/>
+		<property name="userDAO" ref="userDAOImpl"/>
+	</bean>
+	
+	<!-- select -->
+	<bean id= "userSelectAction" class="user.action.UserSelectAction">
+		<property name="userDAO" ref="userDAOImpl"/>
+	</bean>
+	<!-- update -->
+	<bean id="userUpdateAction" class="user.action.UserUpdateAction">
+		<property name="userDAO" ref="userDAOImpl"/>
+	</bean>
+	
+	<!-- delete -->
+	<bean id="userDeleteAction" class="user.action.UserDeleteAction">
+		<property name="userDAO" ref="userDAOImpl"/>
+	</bean>
+	
+	<bean id="userDTO" class="user.bean.UserDTO"/>
+	
+	<!--bean id="userDAOImpl" class="user.dao.UserDAOImpl">
+		 <property name="jdbcTemplate" ref="jdbcTemplate"/> 
+	</bean -->
+	
+	<bean id="userDAOImpl" class="user.dao.UserDAOImpl">
+		<property name="dataSource" ref="dataSource"/>
+	</bean>
+	
+	<!-- <bean id="jdbcTemplate" class="org.springframework.jdbc.core.JdbcTemplate">
+		<constructor-arg ref="dataSource"/>
+		Template 클래스를 통해서 connection 생성
+	</bean> -->
+</beans>

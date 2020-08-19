@@ -1,0 +1,17 @@
+1558251291323	Move 'form.jsp' to 'main'
+1558254168200	Rename resource 'ect.jsp'
+1558347714393	Copy file
+1558347754685	Copy file
+1558347760057	Copy file
+1558497041127	Rename resource 'main'
+1558498036495	Move 'product' to 'WebContent'
+1558501685642	Delete elements
+1558501840340	Rename package 'user.conf'
+1558501868731	Rename package 'productDAO'
+1558502371806	Rename resource 'userMapper.xml'
+1558502422479	Rename type 'productController'
+1558502432861	Delete element
+1558507752719	Delete element
+1558507786395	Delete element
+1558507879442	Delete element
+1558588534347	Rename resource 'image1.jpg'

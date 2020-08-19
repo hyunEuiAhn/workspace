@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;KGmall&apos; to &apos;KGmall2&apos;" description="Rename resource &apos;KGmall&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="/KGmall" name="KGmall2" stamp="1559448015919" updateReferences="true"/>
+</session>

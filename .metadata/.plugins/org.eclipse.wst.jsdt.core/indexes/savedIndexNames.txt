@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+/Volumes/Samsung USB/java/spring/workspace/.metadata/.plugins/org.eclipse.wst.jsdt.core/indexes
+1498405602.index
+4016938983.index
+2333678324.index
+976350415.index
+2769890299.index
+2777957981.index
+3769451998.index

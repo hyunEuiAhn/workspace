@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<section name="org.eclipse.m2e.core.pom.dependencies">
+	</section>
+	<section name="org.eclipse.m2e.core.pom.overview">
+		<list key="ciManagementUrl">
+		</list>
+		<list key="ciManagementSystem">
+		</list>
+		<list key="issueManagementSystem">
+		</list>
+		<list key="issueManagementUrl">
+		</list>
+	</section>
+	<section name="org.eclipse.m2e.core.ui.internal.dialogs.MavenRepositorySearchDialog">
+		<item value="480" key="width"/>
+		<item value="480" key="x"/>
+		<item value="108" key="y"/>
+		<item value="483" key="height"/>
+	</section>
+	<section name="wizardPage">
+		<list key="groupId">
+			<item value="profile"/>
+			<item value="KGmall"/>
+			<item value="KGMall1"/>
+			<item value="test"/>
+			<item value="chapter06_Maven"/>
+			<item value="chapter05_Maven"/>
+			<item value="chapter04_Maven"/>
+			<item value="chapter03_mavenn"/>
+			<item value="chapter_Maven03"/>
+			<item value="chapter03_Maver"/>
+			<item value="chapter02_Maven"/>
+			<item value="chapter01_Maven"/>
+		</list>
+		<list key="name">
+		</list>
+		<list key="artifactId">
+			<item value="profile"/>
+			<item value="KGmall"/>
+			<item value="KGMall1"/>
+			<item value="test"/>
+			<item value="chapter06_Maven"/>
+			<item value="chapter05_Maven"/>
+			<item value="chapter04_Maven"/>
+			<item value="chapter03_mavenn"/>
+			<item value="chapter_Maven03"/>
+			<item value="chapter03_Maver"/>
+			<item value="chapter02_Maven"/>
+			<item value="chapter01_Maven"/>
+		</list>
+		<list key="version">
+			<item value="0.0.1-SNAPSHOT"/>
+		</list>
+	</section>
+</section>

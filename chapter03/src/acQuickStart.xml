@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:context="http://www.springframework.org/schema/context"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.3.xsd
+		http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context-4.3.xsd">
+
+	<bean id="messageBeanImpl" class="sample01.MessageBeanImpl">
+		<constructor-arg value="Have a nice day!!"/>
+	</bean>
+	
+	<bean id="loggingAdvice" class="sample01.LoggingAdvice"/>
+		
+	<!-- AOP: Before -->
+	<aop:config>
+		<aop:pointcut 
+			expression="execution(public void sample01.MessageBeanImpl.*Before())" 
+			id="methodBefore"/>
+		<aop:aspect ref="loggingAdvice">
+		<!--loggingAdvice 참조  -->
+			<aop:before method="beforeTrace" pointcut-ref="methodBefore"/>
+			<!-- methodBefore 앞에  beforeTrace 메소드를 넣을 것이다.-->
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- AOP: After -->
+	<aop:config>
+		<aop:pointcut 
+			expression="execution(public void sample01.MessageBeanImpl.*After())"
+			id="methodAfter"/>
+			<!--expression="execution(public * *.*.*After(..))" (..)은 매개변수가 오던 말던 상관 없다.--> 
+			<!-- execution() = 실핼할 때 넣겠다. -->
+		<aop:aspect ref="loggingAdvice">
+		<!--loggingAdvice 참조  -->
+			<aop:after method="afterTrace" pointcut-ref="methodAfter"/>
+		</aop:aspect>
+	</aop:config>
+	
+	<!-- AOP:Around -->
+	<aop:config>
+		<aop:pointcut 
+			expression="execution(public * *.*.*Print(..))"
+			id="methodAround"/>
+		<aop:aspect ref="loggingAdvice">
+			<aop:around method="trace" pointcut-ref="methodAround"/>
+		</aop:aspect>
+	</aop:config>
+</beans>

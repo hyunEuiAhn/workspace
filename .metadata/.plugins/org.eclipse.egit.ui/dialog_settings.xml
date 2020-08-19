@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<list key="RepositorySelectionPage.UsedUris">
+		<item value="https://github.com/creativezzanggu/webProject01.git"/>
+	</list>
+	<list key="EGit.KnownHosts">
+		<item value="bitbucket.org"/>
+		<item value="git.eclipse.org"/>
+		<item value="github.com"/>
+	</list>
+	<list key="CommitDialog.authorValues">
+		<item value="Your Name Here &lt;heahn153@gmail.com&gt;"/>
+		<item value="hyuneui &lt;hyuneui@localhost&gt;"/>
+	</list>
+	<list key="CommitDialog.committerValues">
+		<item value="Your Name Here &lt;heahn153@gmail.com&gt;"/>
+		<item value="hyuneui &lt;hyuneui@localhost&gt;"/>
+	</list>
+	<section name="org.eclipse.egit.ui.internal.push.PushResultDialog.dialogBounds">
+		<item value="650" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="314" key="DIALOG_X_ORIGIN"/>
+		<item value="111" key="DIALOG_Y_ORIGIN"/>
+		<list key="sashWeights">
+			<item value="600"/>
+			<item value="400"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.pull.PullResultDialog.dialogBounds">
+		<item value="924" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="366" key="DIALOG_HEIGHT"/>
+		<item value="449" key="DIALOG_X_ORIGIN"/>
+		<item value="284" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="GitCommitMessageComponent">
+		<list key="/Users/hyuneui/git/webProject01/.git">
+			<item value="empty"/>
+		</list>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.fetch.FetchResultDialog.dialogBounds">
+		<item value="611" key="DIALOG_WIDTH"/>
+		<item value="1|.AppleSystemUIFont|11.0|0|COCOA|1|.AppleSystemUIFont" key="DIALOG_FONT_NAME"/>
+		<item value="434" key="DIALOG_HEIGHT"/>
+		<item value="371" key="DIALOG_X_ORIGIN"/>
+		<item value="118" key="DIALOG_Y_ORIGIN"/>
+	</section>
+	<section name="org.eclipse.egit.ui.internal.staging.StagingView">
+		<item value="500,500" key="STAGING_SASH_FORM_WEIGHT"/>
+		<item value="false" key="sortItemState"/>
+		<item value="500,500" key="HORIZONTAL_SASH_FORM_WEIGHT"/>
+	</section>
+</section>
